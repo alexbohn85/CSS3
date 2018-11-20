@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>CSS Day 1</title>
+	<link rel="stylesheet" href="./css/styles.css">
+	<style>
+		#checkthisForInternal {
+			background-color: #eee;
+		}
+
+		.checkthatForInternal {
+			color: yellow;
+		}
+
+	</style>
+
+</head>
+<body>
+	<!-- inline css -->
+	<div id="checklist" style="background-color: lightgrey;">
+		<p>'normal' text here</p>
+		<p style="color: red;" class="checkthatForInternal">'highlight' text here</p>
+	</div>
+
+	<!-- internal css -->
+	<div id="checkthisForInternal">
+		<p>'normal' text here</p>
+		<p class="checkthatForInternal">'highlight' text here</p>
+	</div>
+
+	<!-- external css -->
+	<div id="checkthisForExternal">
+		<p>'normal' text here</p>
+		<p class="checkthatForExternal">'highlight' text here</p>
+	</div>
+	
+	
+</body>
+</html>
