@@ -1,0 +1,47 @@
+
+@import "./_table.css";
+@import "./_navigation.css";
+
+input {
+	margin: 10px;
+}
+
+
+input[type]{
+	border: 2px solid black;
+}
+
+input[type="submit"]{
+	background-color: salmon;
+}
+
+/* select all children inside grandpa > parent class */
+.grandpa .parent .child {
+
+}
+
+/* ">" select only the child and NOT grandchild */
+.parent > .child {
+	
+}
+
+/* + selector - adjacent siblins element */
+/* ~ selector - all siblins elements after */
+
+/* nth-child selector - ATTENTION !! nth-child is less specific */
+.list li:nth-child(2) {
+	color: yellow; /* -> This is not working because nth-child(2) is a p tag */
+}
+
+.list li:nth-child(4) {
+	color: salmon;
+}
+
+/* nth-of-type selector - it is very specific to the type use it to select siblings from that type no matter other types siblings */
+.list li:nth-of-type(5){
+	color: green;
+}
+
+
+
+

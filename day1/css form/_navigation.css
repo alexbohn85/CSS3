@@ -1,0 +1,24 @@
+li {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:link {
+	background-color: yellow;
+}
+
+a:visited {
+	background-color: grey;
+}
+
+a:active {
+	background-color: green;
+}
+
+/* hover must be in the end because 'link' 'visited' and 'active' overrides 'hover' */
+a:hover {
+	background-color: purple;
+}

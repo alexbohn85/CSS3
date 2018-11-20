@@ -1,0 +1,18 @@
+body {
+	/*background-image: url("./water-lily-3784022_1920.jpg");*/
+}
+
+#checkthisForExternal {
+	/*background-color: rgb(255,200,50);*/
+	/*background-image: url("./water-lily-3784022_1920.jpg");*/
+}
+
+.wrapper {
+	/*background-color: rgb(255,200,50);*/
+	background-image: url("porrrrra.jpg");
+	background-size: cover;
+}
+
+.checkthatForExternal {
+	/*background-color: hsl(10,50%,80%);*/
+}
