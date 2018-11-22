@@ -1,0 +1,41 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	margin: 0 3%;
+	font-size: 18px;	
+}
+
+body > * {
+	background-color: #aea;
+	padding-left: 50px;
+}
+
+a {
+	font-size: 32px;
+	text-decoration: none;
+}
+
+li {
+	list-style-type: none;
+	float: left;
+	width: 10%;
+}
+
+nav {
+	/* position sticky makes the element stick when it scrolls to position defined by top */
+	position: sticky;
+	top: 0px;	
+	background-color: rgba(0,0,0,0.4);
+}
+
+nav::after {
+	content: "";
+	display: block;
+	/* clear doesnt allow elements to float both sides */
+	clear: left;
+	margin-bottom: 25px;
+}
+
+nav::before {
+
+}

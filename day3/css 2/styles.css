@@ -1,0 +1,36 @@
+.box {
+	width: 50px;
+	height: 60px;
+	background: lightblue;
+	margin-bottom: 10px;
+}
+
+.relative {
+	position: relative;
+	bottom: 10px;
+}
+
+mark {
+	/* in order to work we need to add position: relative; */
+	position: relative;
+	top: 10px;
+}
+
+/* adding position relative for .absolute to work */
+.parent {
+	position: relative;
+}
+
+/* in order to use absolute we need to add position: relative; to its parent */
+.absolute {
+	position: absolute;
+	left: 40px;
+}
+
+/* it stays fixed in the window even if you scroll */
+.fixed {
+	position: fixed;
+	bottom: 0px;
+	right: 0px;
+	background-color: rgba(50,50,50,0.8);
+}
