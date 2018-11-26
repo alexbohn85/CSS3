@@ -1,0 +1,31 @@
+.container{
+	/* text-align: center; */
+}
+
+.blockBox{
+	width: 150px;
+	height: 150px;
+	background: #f45f42; 
+	border: 1px dashed black;
+	line-height: 150px;
+	display: block; 
+}
+
+.inlineBox{
+	width: 150px;
+	height: 150px;
+	background: #bbf441; 
+	border: 1px dashed black;
+	line-height: 150px;
+	 display: inline; 
+}
+
+.inlineBlockBox{
+	width: 150px;
+	height: 150px;
+	background: #f441f4; 
+	border: 1px dashed black;
+	line-height: 150px;
+	 display: inline-block; 
+}
+

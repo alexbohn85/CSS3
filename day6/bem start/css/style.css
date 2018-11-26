@@ -1,0 +1,38 @@
+ /* Responsive Design using flex */
+.containerRow{
+	display: flex;
+	justify-content: space-around;
+	-ms-flex-pack: distribute;
+
+	 /*you can use flex-direction and flex-wrap combined using flex-flow */
+	/*flex-direction: row-reverse;*/
+	/*flex-wrap: wrap;*/
+	flex-flow: row-reverse wrap;
+}
+
+.card{
+	background-color: #eef;
+	text-align: center;
+	padding: 10px;
+}
+
+.card--dark{
+	background-color: #668;
+}
+
+.card__image{
+	border-radius: 30px;
+}
+
+.card__title{
+	text-shadow: 1px 1px 0px grey;
+}
+
+.card__body{
+	text-decoration: underline;
+}
+
+.card__title--light, .card__body--light{
+	color: lightgray;
+}
+

@@ -9,19 +9,6 @@ body, html {
     height: 100%;
 }
 
-.mouth {
-	height: 10px;
-	width: 10px;
-	position: relative;
-	left: 30px;
-	border-top: none;
-	border-left: none;
-	border-right: 4px solid black;
-	border-bottom: 4px solid black;	
-	transform: rotate(45deg);
-}
-
-/* Tiny reset thingy */
 
 
 .wrapper {
@@ -33,7 +20,7 @@ body, html {
   /* Enable scrolling on the page. */
   overflow-y: auto;
   /* Set the perspective to 2px. This is essentailly the simulated distance from the viewport to transformed objects.*/
-  perspective: 2px;
+  perspective: 5px;
 }
 
 .section {
@@ -74,7 +61,7 @@ body, html {
   background: lightblue;
 }
 
-/* Sets the actual background images to adorable kitties. This part is crucial. */
+/* Sets the actual background images. This part is crucial. */
 .bg1::after {
   background-image: url('https://cdn.pixabay.com/photo/2016/03/09/15/15/mountain-1246554_960_720.jpg');  
 }
