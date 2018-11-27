@@ -1,0 +1,46 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Cat Photos</title>
+	<link rel="stylesheet" href="./css/styles.css">
+</head>
+<body id="body_ID">
+	<p id="label" style="text-align: center"></p>
+	<div class="container">
+		<div class="tile">
+			<figure>				
+				<p><img src="./images/cat1.jpg" alt=""></p>
+				<figcaption>sleepy cat</figcaption>
+			</figure>
+		</div>
+		<div class="tile">
+			<figure>				
+				<p><img src="./images/cat2.jpg" alt=""></p>
+				<figcaption>clean cat</figcaption>
+			</figure>
+		</div>
+		<div class="tile">
+			<figure>				
+				<p><img src="./images/cat3.jpg" alt=""></p>
+				<figcaption>tired cat</figcaption>
+			</figure>
+		</div>
+		<div class="tile">
+			<figure>				
+				<p><img src="./images/cat4.jpg" alt=""></p>
+				<figcaption>upside down cat</figcaption>
+			</figure>
+		</div>
+	</div>
+
+	<script>
+		document.getElementById("label").innerHTML = `${window.innerWidth} x ${window.innerHeight}`;
+
+      	let t = window.addEventListener("resize", function() {
+      	document.getElementById("label").innerHTML = `${window.innerWidth} x ${window.innerHeight}`;
+      }, false);
+      
+    </script>
+</body>
+</html>
