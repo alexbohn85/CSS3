@@ -1,14 +1,17 @@
-/* TODO
- - organize and comment
- - add prefix
-*/
+/*
+    Author: Alex Bohn
+    Date: 2018/11
+    ITD Canada
+    Mobile-first design
+*/ 
 
- 
  @import url('https://fonts.googleapis.com/css?family=Karla');
  @import url('https://fonts.googleapis.com/css?family=Roboto');
  @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300|Source+Sans+Pro:200');
  @import url(./animations.css);
 
+
+/************* general start ***************/
 * {
     margin: 0px;
     padding: 0px;
@@ -19,6 +22,7 @@
     font-family: 'Roboto Condensed', sans-serif;
 }
 
+/* this is an offset class for the anchor due to fixed header */
 .offset:before {
     display: block; 
     content: " "; 
@@ -26,8 +30,47 @@
     margin-top: -100px; /* Give negative margin of your fixed element */   
     visibility: hidden; 
 }
+.background {
+    position: fixed;
+    overflow: hidden;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1);
+    z-index: -10;
+
+    background-image: url(../assets/background_bw.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+    -webkit-filter: blur(0px);
+    
+            filter: blur(0px);
+
+    /*animation: blur_in 2s ease;*/
+    /*animation-fill-mode: both;*/
+}
+/************* general end ***************/
 
 /********** header start ***************/
+#header_wrapper {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    width: 100%;    
+    background-color: rgba(255,255,255,1);
+    color: white;
+    z-index: 80;
+    -webkit-animation: fade_in 0.2s ease, slide_down 0.3s ease;
+            animation: fade_in 0.2s ease, slide_down 0.3s ease;
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+}
 header {
     position: relative;
     display: -webkit-box;
@@ -130,8 +173,7 @@ a {
     font-size: 0.8em;
     width: 80%;
     margin: auto;
-    margin-bottom: 20px;
-    /*text-shadow: 0px 0px 1px black;*/
+    margin-bottom: 20px;    
 }
 h2, h3{
     width: 80%;
@@ -198,50 +240,9 @@ table {
     margin-right: 20px;
     margin-left: 20px;   
 }
-
 /************ content page end *************/
 
 
-.background {
-    position: fixed;
-    overflow: hidden;
-    top: 0px;
-    height: 100%;
-    width: 100%;
-    -webkit-transform: scale(1);
-        -ms-transform: scale(1);
-            transform: scale(1);
-    z-index: -10;
-
-    background-image: url(../assets/background_bw.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    
-    -webkit-filter: blur(0px);
-    
-            filter: blur(0px);
-
-    /*animation: blur_in 2s ease;*/
-    /*animation-fill-mode: both;*/
-}
-
-
-#header_wrapper {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0px;
-    width: 100%;    
-    background-color: rgba(255,255,255,1);
-    color: white;
-    z-index: 80;
-    -webkit-animation: fade_in 0.2s ease, slide_down 0.3s ease;
-            animation: fade_in 0.2s ease, slide_down 0.3s ease;
-    -webkit-animation-delay: 1s;
-            animation-delay: 1s;
-    -webkit-animation-fill-mode: both;
-            animation-fill-mode: both;
-}
 
 /***************** links start *************/
 .links{
@@ -252,46 +253,33 @@ table {
     text-align: center;
 
 }
-
 .links_row_1 img:nth-of-type(1) {
     vertical-align: middle;
     width: 2em;
 }
-
 .links_row_1 img:nth-of-type(2) {
     vertical-align: middle;
     width: 5em;
 }
-
 .links_row_2 img:nth-of-type(1) {
     vertical-align: middle;
     width: 4em;
 }
-
 .links_row_2 img:nth-of-type(2) {
     vertical-align: middle;
     width: 2em;
 }
-
 .links_row_2 img:nth-of-type(3) {
     vertical-align: middle;
     width: 2em;
 }
-
 .links div:nth-child(2) {
     margin-bottom: 20px;
 }
-
-.links img:nth-of-type(1),
-.links img:nth-of-type(2),
-.links img:nth-of-type(3),
-.links img:nth-of-type(4),
-.links img:nth-of-type(5),
-.links img:nth-of-type(6){
+.links img {
     margin-right: 5%;
     margin-left: 5%;
 }
-
 /***************** links end *************/
 
 
@@ -324,8 +312,7 @@ footer p{
     margin-top: 20px;
     margin-bottom: 20px;
     margin-right: 5%;
-    margin-left: 5%    
-    /*background-color: grey;*/
+    margin-left: 5%; 
 }
 /************ footer end *************/
 
@@ -335,7 +322,7 @@ footer p{
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
 
-    /******** GENERAL START ********/
+    /************* general start ***************/
     * {
         font-size: calc(1.1em);
     }    
@@ -346,7 +333,7 @@ footer p{
         margin-top: -200px; /* Give negative margin of your fixed element */   
         visibility: hidden; 
     }
-    /******** GENERAL END ********/
+    /************* general end ***************/
     
     /******** hide mobile exclusive start ******/
     #menu_mobile_id {

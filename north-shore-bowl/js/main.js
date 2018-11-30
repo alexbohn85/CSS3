@@ -1,3 +1,10 @@
+/*
+    Author: Alex Bohn
+    Date: 2018/11
+    ITD Canada
+    Mobile-first design
+*/ 
+
 // jQuery scroll animation
 $('a').click(function() {
     $('html, body').animate({
