@@ -16,3 +16,4 @@ function toggleMenu(event){
 		element.classList.remove("menu_mobile");
 	}
 }
+

@@ -85,12 +85,13 @@ li {
 }
 
 #menu_mobile_id {
+    position: fixed;
     display: none;
     width: 50%;
     height: 100%;
     background-color: rgba(235,235,240,0.98);
     box-shadow: -1px 0 20px rgba(35,35,40,0.4);
-    position: absolute;
+    /*position: absolute;*/
     top: 0px;
     left: 0px;
     z-index: 10000;
@@ -126,7 +127,7 @@ li {
     text-align: justify;
     background-color: rgba(100,100,100,1);
     color: white;
-    animation: fade_in 2s ease, slide_up 1s ease;
+    animation: fade_in 2s ease, slide_up 0.3s ease;
     animation-delay: 2s;
     animation-fill-mode: both;
 }
@@ -151,16 +152,15 @@ li {
     transform: scale(1.1);
     z-index: -10;
 
-    background-image: url(../assets/background_sm.jpg);
+    background-image: url(../assets/background_bw.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     
     filter: blur(0px);
 
     /*animation: blur_in 2s ease;*/
 }
-
-
 
 
 #header_id {
