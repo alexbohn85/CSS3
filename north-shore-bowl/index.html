@@ -6,16 +6,14 @@
 	<link rel="stylesheet" href="./css/styles.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!-- <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" /> -->
-<!-- 	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> -->
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 </head>
 <body>
-
+	<!-- FIXED BACKGROUND -->
 	<div class="background"></div>
 
-
-	<div id="header_id" class="border_radius_5">
+	<!-- HEADER START -->
+	<div id="header_wrapper">
 		<header>
 			<div id="header_logo">
 				<img id="logo_blur" src="./assets/logo_pin.png" alt="">
@@ -27,7 +25,6 @@
 				<i class="fas fa-bars fa-sm"></i>
 			</div>
 		</header>
-
 		<div class="menu_desktop">
 			<ul>
 				<li>HOME DESKTOP</li>
@@ -36,44 +33,222 @@
 				<li>ITEM 3</li>
 			</ul>
 		</div>
-
-
 	</div>
 
+	<!-- MENU MOBILE START -->
 	<div id="menu_mobile_id">
 		<ul>
-			<li><!-- <i class="fas fa-angle-right"></i> -->HOME</li>
+			<li><a href="#top">HOME</a></li>
 			<hr>
-			<li><!-- <i class="fas fa-angle-right"></i> -->PRICES</li>
+			<li><a href="#hours">HOURS</a></li>
 			<hr>
-			<li><!-- <i class="fas fa-angle-right"></i> -->BIRTHDAY</li>
+			<li><a href="#prices">PRICES</a></li>			
 			<hr>
-			<li><!-- <i class="fas fa-angle-right"></i> -->LINKS</li>
+			<li><a href="#glowing">GLOWING BOWLING</a></li>
+			<hr>
+			<li><a href="#footer_social">SOCIAL</a></li>
 			<hr>
 		</ul>
 	</div>
+	<!-- MENU MOBILE END -->
 
-	<div class="tile">
-		<img src="assets/bowl_light.jpg" alt="">
-		<p class="txt-size-sm">Welcome to North Vancouver's 5 pin bowling center. Open since 1961, this family oriented establishment has been owned and operated by 3 time Canadian Bowling Champion Richard Grubb since 1983. We have 16 lanes to host leagues, glowbowling, bumper bowling, ball ramps, a party room which also glows, video games and snacks. We participate in fund raisers, parties for Christmas, the office and team parties. Fun for everyone. Give us a call or drop in.</p>
+	<!-- PAGE CONTENT START -->
+	<div class="content_page">		
+		<h2 id="home">Welcome to North Vancouver's 5&nbsp;pin bowling center</h2>
+		
+		<p class="txt-size-sm">Open since 1961, this family oriented establishment has been owned and operated by 3 time Canadian Bowling Champion Richard Grubb since 1983. We have 16 lanes to host leagues, glowbowling, bumper bowling, ball ramps, a party room which also glows, video games and snacks. We participate in fund raisers, parties for Christmas, the office and team parties. Fun for everyone. Give us a call or drop in.</p>
+		
 		<img src="./assets/bowl_dark.jpg" alt="">
-	</div>
+		
+		<h2 id="hours" class="offset">Hours</h2>
+		<table>
+			<tr>
+				<td>Monday</td>
+				<td>9:00 pm</td>
+				<td>10:00 pm</td>
+			</tr>
+			<tr>
+				<td>Tuesday</td>
+				<td>12:00 am</td>
+				<td>9:00 pm</td>
+			</tr>
+			<tr>
+				<td>Wednesday</td>
+				<td>9:00 am</td>
+				<td>9:00 pm</td>
+			</tr>
+			<tr>
+				<td>Thursday</td>
+				<td>11:00 am</td>
+				<td>9:00 pm</td>
+			</tr>
+			<tr>
+				<td>Friday</td>
+				<td>12 noon</td>
+				<td>10:00 pm</td>
+			</tr>
+			<tr>
+				<td>Saturday</td>
+				<td>11:00 am</td>
+				<td>11:00 pm</td>
+			</tr>
+			<tr>
+				<td>Sunday</td>
+				<td>11:00 am</td>
+				<td>7:00 pm</td>
+			</tr>
+		</table>
+		
+		<img src="assets/bowl_light.jpg" alt="">
+		
+		<h2 id="prices" class="offset">Prices</h2>
+		<table>
+			<tr>
+				<td>Public bowling</td>
+				<td>$6.00</td>
+			</tr>
+			<tr>
+				<td>Shoes</td>
+				<td>$3.00</td>
+			</tr>
+			<tr>
+				<td>Golden age 60 over</td>
+				<td>$5.75</td>
+			</tr>
+			<tr>
+				<td>Hourly rate 5 people including shoes</td>
+				<td>$45.00</td>
+			</tr>
+			<tr>
+				<td>Birthday parties per child</td>
+				<td>$24.00</td>
+			</tr>
+		</table>
 
-	<footer>
+		<h2>Public Bowling Every Day</h2>
+		<h3>except june, july and august. Call for lane availability</h3>
+		<img src="./assets/shoes.jpg" alt="">
+		
+		<h2 id="glowing" class="offset">Glow Bowling</h2>
+		<h3>Lights! Music! Come to our glow bowling nights for a fun twist!</h3>
+		<table>
+			<tr>
+				<td>Friday</td>
+				<td>7:00 pm</td>
+				<td>10:00 pm</td>
+			</tr>
+			<tr>
+				<td>Saturday</td>
+				<td>11:30 am</td>
+				<td>11:00 pm</td>
+			</tr>
+			<tr>
+				<td>Sunday</td>
+				<td>11:30 am</td>
+				<td>6:30 pm</td>
+			</tr>
+		</table>
+		
+		<h2>The Birthday Package</h2>
+		<p class="txt-size-sm">2 hour party with 1 hour of bowling and shoes. Your choice of 2 slices of pizza or hotdogs and bottomless potato chips and pop and juice. Party hats, plates, napkins, forks & cups are all supplied. All you have to do is bring the cake and the grab bags! $24.00 per child glow bowling</p>
+		<img src="assets/birthday.jpg" alt="">
+
+		<h2>Leagues</h2>
+		<h3>Openings for Beginners, Experienced or Teams!</h3>
+		<h2>Golden Age</h2>
+		<table>
+			<tr>
+				<td>Pioneers</td>
+				<td>Monday 9:30 am</td>
+			</tr>
+			<tr>
+				<td>Silver Threads</td>
+				<td>Tuesday 12:00 pm</td>
+			</tr>
+			<tr>
+				<td>Pace Setters</td>
+				<td>Thursday 1:00 pm</td>
+			</tr>
+			<tr>
+				<td>Lonsdale Youngsters</td>
+				<td>Friday 1:15 pm</td>
+			</tr>
+		</table>
+
+		<h2>Adult / Mixed</h2>
+		<table>
+			<tr>
+				<td>Allstars</td>
+				<td>Monday 8:00 pm</td>
+			</tr>
+			<tr>
+				<td>North Shore Mixed</td>
+				<td>Tuesday 6:45 pm</td>
+			</tr>
+			<tr>
+				<td>North Shore Blind</td>
+				<td>Tuesday 2:00 pm</td>
+			</tr>
+			<tr>
+				<td>Special Olympics</td>
+				<td>Thursday 6:30 pm</td>
+			</tr>
+		</table>
+
+		<h2>Ladies League</h2>
+		<table>
+			<tr>
+				<td>Breakfast Club</td>
+				<td>Tuesday 9:15 am</td>
+			</tr>
+			<tr>
+				<td>Early Birds</td>
+				<td>Wednesday 9:15 am</td>
+			</tr>
+			<tr>
+				<td>Eager Beavers</td>
+				<td>Wednesday 1:00 pm</td>
+			</tr>
+		</table>
+
+		<h2>How to Score</h2>
+		<p class="txt-size-sm">A game consists of 10 frames. A frame consists of 3 or less tries to knock down 5 pins. The point value for each pin is in the picture. Knocking all the pins down with 3 balls is 15 points. Knocking all the pins down with the first 2 balls (a spare) is the same 15 points plus the points aquired with first ball thrown in the next frame. Knocking all the pins down with the first ball (a strike) is the same 15 points plus the points of the first two balls in the next frame.</p>
+		
+		<h2>Reservations Accepted</h2>	
+		<div class="pay_wrapper">
+			<img class="pay_img" src="./assets/pay_visa.png" alt="">
+			<img class="pay_img" src="./assets/pay_master.png" alt="">
+			<img class="pay_img" src="./assets/pay_interac.png" alt="">		
+		</div>
+	</div>
+	<!-- PAGE CONTENT END -->
+
+	<div class="links">
+	<h2>Links</h2>
+		<div class="links_row_1">
+			<img src="assets/logo_edited.png" alt="">
+			<img src="assets/logo_bowl-canada.png" alt="">
+		</div>
+		<div class="links_row_2">			
+			<img src="assets/logo_fed_saskat.png" alt="">
+			<img src="assets/logo_5_pin.png" alt="">
+			<img id="img_wa" src="assets/logo_ontario.jpg" alt="">
+		</div>
+	</div>
+	<!-- FOOTER START -->
+	<footer id="footer_social">
 		<div class="social">		
 			<i class="fab fa-facebook-f"></i>
 			<i class="fab fa-twitter"></i>
 			<i class="fab fa-instagram"></i>
 			<i class="far fa-envelope"></i>
 		</div>
-
 		<p>North Shore Bowling | Rolling Since 1961</p>
 	</footer>
-
-
-
-
+	<!-- FOOTER END -->
 	
+	<!-- SCRIPT START -->
 	<script src="./js/main.js"></script>
+	<!-- SCRIPT END -->
 </body>
 </html>

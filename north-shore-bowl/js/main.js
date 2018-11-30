@@ -1,3 +1,12 @@
+// jQuery scroll animation
+$('a').click(function() {
+    $('html, body').animate({
+        scrollTop: $($(this).attr('href')).offset().top
+    }, 800);
+    return false;
+});
+
+
 let toggle = true;
 function toggleMenu(event){
 	
@@ -6,11 +15,11 @@ function toggleMenu(event){
 
 	if(toggle){
 		element.classList.add("menu_mobile");
-		btn.style.transform = 'rotate(0deg)';
+		btn.style.transform = 'rotate(180deg)';
 
 	} else{
 		element.classList.remove("menu_mobile");
-		btn.style.transform = 'rotate(180deg)';
+		btn.style.transform = 'rotate(0deg)';
 	}
 
 	toggle = !toggle;
