@@ -55,7 +55,7 @@
 
 @keyframes blur_in {
     0% {
-        filter: blur(10px);
+        filter: blur(20px);
     }
 
     100% {
