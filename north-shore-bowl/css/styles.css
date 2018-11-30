@@ -4,13 +4,15 @@
  - add "apperUp" animation, check for Safari*/
 
  @import url('https://fonts.googleapis.com/css?family=Karla');
+ @import url('https://fonts.googleapis.com/css?family=Roboto');
  @import url(./animations.css);
 
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: 'Karla', sans-serif;
+    /*font-family: 'Karla', sans-serif;*/
+    font-family: 'Roboto', sans-serif;
     font-size: 1em;
 }
 
@@ -57,7 +59,7 @@ h1 {
 
 #logo_blur {
     filter: drop-shadow(0 0 4px white);
-    animation: shine .7s ease infinite;
+    /*animation: shine .7s ease infinite;*/
     width: 100%;
 }
 
@@ -105,6 +107,8 @@ li {
 }
 /********** menu desktop end **********/
 
+
+
 .background {
     position: fixed;
     top: 0px;
@@ -117,9 +121,11 @@ li {
     background-repeat: no-repeat;
     background-size: cover;
     
-    filter: blur(3px);
+    filter: blur(0px);
 
     animation: blur_in 1s ease; 
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
     
     /*animation*/
 /*    -webkit-animation-name: blurIn;
@@ -136,9 +142,12 @@ li {
     /*box-shadow: 0 0 0.1px white;*/
     color: white;
     z-index: 3;
+    opacity: 0;
     
     /*animation*/
-    animation: fade_in .3s ease, slide_up .3s ease;
+    animation: fade_in 1.2s ease, slide_down 1.2s ease;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
 }
 
 
