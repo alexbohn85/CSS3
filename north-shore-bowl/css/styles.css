@@ -11,41 +11,48 @@
     padding: 0px;
     box-sizing: border-box;
     font-family: 'Karla', sans-serif;
-    font-size: 1rem;
+    font-size: 1em;
 }
 
 
 /**** header start ****/
 
 header {
+    position: relative;
     line-height: 60px;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     text-align: center;
     color: black;
 }
 
 #header_logo {
+    position: absolute;
     width: 10%;
+    top: 50%;
+    left: 2.5%;
+    transform: translateY(-50%);
     /*background-color: green;*/
 }
 #header_title {
-    /*width: 80%;*/
+    margin-left: 15%;
+    width: 75%;
+    font-size: 15px;
     /*background-color: yellow;*/
 }
+
 #header_icon{
     width: 10%;
-    padding-top: 19px;
-    font-size: 1.5em;
+    padding-top: 21px;
+    font-size: 1.4em;
     /*background-color: gray;*/
 }
-
-
-
 
 h1 {
     font-size: 1.4em;
 }
+
+
 
 #logo_blur {
     filter: drop-shadow(0 0 4px white);
