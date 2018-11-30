@@ -20,7 +20,7 @@ header {
 }
 
 h1 {
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
 #logo_blur {
@@ -47,10 +47,6 @@ li:hover {
 .menu {
     line-height: 2em;
     text-align: center;
-}
-
-.yellow {
-    color: green !important; 
 }
 
 .background {
@@ -93,7 +89,6 @@ li:hover {
     
     /*animation*/
     animation: fade_in .3s ease, slide_up .3s ease;
-    animation-delay: 3s;
 }
 
 
