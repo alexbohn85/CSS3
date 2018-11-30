@@ -18,7 +18,7 @@
 /**** header start ****/
 
 header {
-    padding-top: 2em;
+    padding-top: 10px;
     position: relative;
     line-height: 60px;
     display: flex;
@@ -46,13 +46,13 @@ header {
     width: 10%;
     padding-top: 21px;
     font-size: 1.4em;
+    color: #87c;
     /*background-color: gray;*/
 }
 
 h1 {
     font-size: 1.4em;
 }
-
 
 
 #logo_blur {
@@ -63,6 +63,8 @@ h1 {
 
 /**** header end ****/
 
+
+/********** menu mobile start **********/
 
 ul {
     color: black;
@@ -76,12 +78,6 @@ li {
     font-size: 1.3em;
 }
 
-.menu_desktop {
-    display: none;
-    line-height: 2em;
-    text-align: center;
-}
-
 .menu_mobile {
     display: none;
     animation: slide_right 0.5s ease, fade_in 0.8s ease;
@@ -90,12 +86,24 @@ li {
 #menu_mobile_id {
     display: none;
     width: 50%;
+    height: 100%;
     background-color: rgba(235,235,240,0.98);
     box-shadow: 3px 0 2px rgba(35,35,40,0.4);
     position: absolute;
-    top: 146px;
+    top: 0px;
     left: 0px;
 }
+
+/********** menu mobile end **********/
+
+
+/********** menu desktop start **********/
+.menu_desktop {
+    display: none;
+    line-height: 2em;
+    text-align: center;
+}
+/********** menu desktop end **********/
 
 .background {
     position: fixed;
@@ -111,7 +119,7 @@ li {
     
     filter: blur(3px);
 
-    animation: blur_in 2s ease; 
+    animation: blur_in 1s ease; 
     
     /*animation*/
 /*    -webkit-animation-name: blurIn;
