@@ -8,6 +8,7 @@ $('a').click(function() {
 
 
 let toggle = true;
+
 function toggleMenu(event){
 	
 	let element = document.getElementById("menu_mobile_id");
