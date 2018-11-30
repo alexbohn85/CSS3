@@ -41,18 +41,16 @@ header {
             justify-content: flex-start;
     text-align: center;
     color: black;
+    height: 3em;
 }
 #header_logo {
     width: 2.1em;
-    padding-left: 3%;
-    /*background-color: green;*/
+    padding-left: 3%;    
 }
 #header_title {
     width: 80%;
-    font-size: 15px;
-    /*font-family: 'Roboto Condensed', sans-serif;*/
-    font-family: 'Source Sans Pro', sans-serif;
-    /*background-color: yellow;*/
+    font-size: 1.5em;    
+    font-family: 'Source Sans Pro', sans-serif;    
 }
 #header_icon{
     width: 10%;
@@ -61,13 +59,9 @@ header {
     transition: -webkit-transform .3s;
     -o-transition: transform .3s;
     transition: transform .3s;
-    transition: transform .3s, -webkit-transform .3s;
-    /*background-color: blue;*/
+    transition: transform .3s, -webkit-transform .3s;    
 }
-h1 {
-    font-size: 1.2em;
-    font-family: 'Source Sans Pro', sans-serif;
-}
+
 #logo_blur {
     -webkit-filter: drop-shadow(0 0 4px white);
             filter: drop-shadow(0 0 4px white);
@@ -121,7 +115,6 @@ hr {
 a {
     text-decoration: none;
 }
-
 /********** menu mobile end **********/
 
 
@@ -140,28 +133,21 @@ a {
     margin-bottom: 20px;
     /*text-shadow: 0px 0px 1px black;*/
 }
-
 h2, h3{
     width: 80%;
     margin: auto;
     margin-bottom: 20px;
     text-align: center;
 }
-
-
-
 h3{
     font-size: 0.6em;
 }
 .content_page h2:nth-of-type(1){
     padding-top: 20px;
 }
-
-
 .content_page h2:nth-of-type(4){
     margin-bottom: 0px;
 }
-
 .content_page {
     margin: auto;
     width: 100%;
@@ -184,7 +170,6 @@ h3{
     -webkit-box-shadow: 0px 2px 10px black;
             box-shadow: 0px 2px 10px black;
 }
-
 table {
     width: 80%;
     vertical-align: middle;
@@ -192,17 +177,14 @@ table {
     margin: 0px auto 20px;
     font-size: 0.8em;
 }
-
 .content_page table:nth-of-type(3), 
 .content_page table:nth-of-type(1),
 .content_page table:nth-of-type(4),
 .content_page table:nth-of-type(5),
-.content_page table:nth-of-type(6)
- {
+.content_page table:nth-of-type(6){
     width: 80%;
     text-align: center;
 }
-
 .pay_wrapper{
     width: 100%;
     display: inline-block;
@@ -354,7 +336,7 @@ footer p{
 @media (min-width: 768px) {
 
     /******** GENERAL START ********/
-    *{
+    * {
         font-size: calc(1.1em);
     }    
     .offset:before {
@@ -399,6 +381,7 @@ footer p{
     }
     /******* header end *******/
 
+    
     /******* menu desktop start *******/
     .menu_desktop {
         width: 100%;
@@ -488,6 +471,7 @@ footer p{
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+    
     h1{
         font-size: 1.5em;
     }
@@ -496,6 +480,7 @@ footer p{
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+    
     a {
         font-size: 0.8em;
         width: 100%;
