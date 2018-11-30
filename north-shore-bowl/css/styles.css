@@ -4,6 +4,7 @@
  - add "apperUp" animation, check for Safari*/
 
  @import url('https://fonts.googleapis.com/css?family=Karla');
+ @import url(./animations.css);
 
 * {
     margin: 0px;
@@ -14,8 +15,8 @@
 }
 
 header {
+    display: block;
     text-align: center;
-    margin-bottom: 2em;
     color: black;
 }
 
@@ -24,7 +25,9 @@ h1 {
 }
 
 #logo_blur {
-    width: 60%;
+    filter: drop-shadow(0 0 4px white);
+    animation: shine 1s ease infinite;
+    width: 4em;
 }
 
 ul {
@@ -164,60 +167,4 @@ li {
 @media (min-width: 1200px) {
 
 
-}
-
-
-
-
-/******************** Animations *************************/
-
-@keyframes slide_up {
-    0% {
-        transform: translateY(10px);
-    }
-
-    100% {
-        transform: translateY(0px);
-    }
-}
-
-@keyframes slide_down {
-    0% {
-        transform: translateY(-10px);
-    }
-
-    100% {
-        transform: translateY(0px);
-    }
-}
-
-@keyframes slide_right {
-    0% {
-        transform: translateX(-50px);
-    }
-
-    100% {
-        transform: translateX(0px);
-    }
-}
-
-
-@keyframes fade_in {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes blur_in {
-    0% {
-        filter: blur(10px);
-    }
-
-    100% {
-        filter: blur(3px);
-    }
 }
