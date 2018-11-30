@@ -93,7 +93,7 @@ li {
     position: absolute;
     top: 0px;
     left: 0px;
-    z-index: 10;
+    z-index: 10000;
 }
 
 /********** menu mobile end **********/
@@ -164,11 +164,13 @@ li {
 
 
 #header_id {
+    position: sticky;
+    top: 0px;
     width: 100%;    
-    background-color: rgba(255,255,255,0.8);
+    background-color: rgba(255,255,255,1);
     /*box-shadow: 0 0 0.1px white;*/
     color: white;
-    /*z-index: 80;*/
+    z-index: 80;
     
     /*animation*/
     animation: fade_in 0.2s ease, slide_down 0.3s ease;
