@@ -12,7 +12,7 @@ TODO
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body onload="start();">
+<body>
 
 	<div class="background an_blur_in_1"></div>
 
@@ -20,18 +20,32 @@ TODO
 	<div id="page_container" class="border_radius_5">
 		<header>			
 			<!-- <img id="logo_blur" src="assets/north-shore-bowl_edited.jpg" alt=""> -->
-			<h1>NORTH SHORE BOWLING</h1>
+			<h1>NORTH SHORE BOWLING<i onclick="toggleMenu(event);" class="fas fa-bars fa-sm menu-margin"></i></h1>
+
 		</header>
 
-		<div class="menu">
+		<div class="menu_desktop">
 			<ul>
-				<li>HOME</li>
+				<li>HOME DESKTOP</li>
 				<li>PRICES</li>
 				<li>ITEM 2</li>
 				<li>ITEM 3</li>
 			</ul>
 		</div>
+
+		<div id="menu_mobile_id">
+			<ul>
+				<li><i class="fas fa-angle-right"></i> HOME</li>
+				<li><i class="fas fa-angle-right"></i> PRICES</li>
+				<li><i class="fas fa-angle-right"></i> BIRTHDAY</li>
+				<li><i class="fas fa-angle-right"></i> LINKS</li>
+			</ul>
+		</div>
 	</div>
+
+
+
+
 	
 	<script src="./js/main.js"></script>
 </body>
