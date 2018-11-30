@@ -344,7 +344,7 @@ footer p{
 
     /************* general start ***************/
     * {
-        font-size: 1rem;
+        font-size: 1.1rem;
     }    
     .offset:before {
         display: block; 
@@ -421,10 +421,10 @@ footer p{
         background-color: #eee;
     }
     a {
-        font-size: 0.6em;
+        font-size: 1em;
         width: 100%;
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
         text-decoration: none;
         color:black;
     }
@@ -493,7 +493,7 @@ footer p{
 @media (min-width: 992px) {
         /************* general start ***************/
     * {
-        font-size: 1.25rem;
+        font-size: 1.15rem;
     }    
     .offset:before {
         display: block; 
@@ -559,6 +559,10 @@ footer p{
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+
+    * {
+        font-size: 1.25rem;
+    } 
     
     a {
         font-size: 0.8em;
@@ -567,6 +571,10 @@ footer p{
         padding-right: 20px;
         text-decoration: none;
         color:black;
+    }
+    table, td {        
+        vertical-align: middle;        
+        font-size: 0.7em;
     }
 
 }
