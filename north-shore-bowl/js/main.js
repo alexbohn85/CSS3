@@ -5,17 +5,12 @@ function toggleMenu(event){
 	let btn = document.getElementById("header_icon");
 
 	if(toggle){
-		element.style.animationDirection = 'normal';
 		element.classList.add("menu_mobile");
-		
-		// btn.style.textShadow = '0px 0px 2px black';
-		// btn.style.color = '#';
-		btn.style.transform = 'rotateZ(90deg)';
+		btn.style.transform = 'rotate(0deg)';
 
 	} else{
 		element.classList.remove("menu_mobile");
-		btn.style.transform = 'rotateZ(0deg)';
-		btn.style.textShadow = '';
+		btn.style.transform = 'rotate(180deg)';
 	}
 
 	toggle = !toggle;

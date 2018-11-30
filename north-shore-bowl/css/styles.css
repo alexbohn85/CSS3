@@ -20,37 +20,30 @@
 /**** header start ****/
 
 header {
-    padding-top: 10px;
     position: relative;
-    line-height: 60px;
     display: flex;
+    align-items: center;
     justify-content: flex-start;
     text-align: center;
     color: black;
 }
 
 #header_logo {
-    position: absolute;
-    width: 2.2em;
-    top: 50%;
-    left: 2.5%;
-    transform: translateY(-50%);
+    width: 12%;
+    padding-left: 1%;
     /*background-color: green;*/
 }
 #header_title {
-    margin-left: 15%;
-    width: 75%;
+    width: 80%;
     font-size: 15px;
     /*background-color: yellow;*/
 }
-
 #header_icon{
     width: 10%;
-    padding-top: 21px;
     font-size: 1.4em;
     transition: transform .3s;
+    /*background-color: blue;*/
 }
-
 h1 {
     font-size: 1.4em;
 }
@@ -58,7 +51,6 @@ h1 {
 
 #logo_blur {
     filter: drop-shadow(0 0 4px white);
-    /*animation: shine .7s ease infinite;*/
     width: 100%;
 }
 
@@ -82,17 +74,17 @@ li {
 
 .menu_mobile {
     animation: slide_right 0.5s ease, fade_in 0.8s ease;
-    animation-fill-mode: both;
+    animation-fill-mode: forwards;
 }
 
 #menu_mobile_id {
     position: fixed;
+    overflow: hidden;
     opacity: 0;
-    width: 50%;
+    width: 40%;
     height: 100%;
     background-color: rgba(235,235,240,1);
     box-shadow: -1px 0 20px rgba(35,35,40,0.4);
-    /*position: absolute;*/
     top: 0px;
     left: 0px;
     z-index: 10000;
@@ -156,10 +148,11 @@ hr {
 
 .background {
     position: fixed;
+    overflow: hidden;
     top: 0px;
     height: 100%;
     width: 100%;
-    transform: scale(1.1);
+    transform: scale(1);
     z-index: -10;
 
     background-image: url(../assets/background_bw.jpg);
