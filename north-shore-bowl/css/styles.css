@@ -131,6 +131,9 @@ li {
     font-size: 0.9em;
     text-align: center;    
 }
+li a{
+    display: block;
+}
 .menu_mobile {
     -webkit-animation: slide_right 0.5s ease, fade_in 0.8s ease;
             animation: slide_right 0.5s ease, fade_in 0.8s ease;

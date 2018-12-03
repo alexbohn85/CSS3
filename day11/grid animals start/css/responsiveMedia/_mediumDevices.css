@@ -1,0 +1,7 @@
+/* display 2 animals in one row */
+.container{
+	display: grid;
+	grid-template-columns: 49.5% 49.5%;
+	grid-gap: 1%;
+	grid-row-gap: 3%;
+}

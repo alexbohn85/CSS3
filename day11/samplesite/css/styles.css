@@ -18,10 +18,11 @@ body {
 	position: fixed;
 	width: 100%;
 	top: 0px;
+	background-color: rgb(49,49,49,0.7);
 }
 
 .icon {	
-	/*display: none;*/
+	display: none;
 	position: absolute;
 	margin-right: 3%;
 	right: 0px;
@@ -29,13 +30,14 @@ body {
 
 ul {
 	padding-left: 2%;
-	list-style: none;
+	list-style: none;	
 	display: flex;
 	justify-content: flex-start;
-	background-color: rgb(49,49,49,0.7);
+	line-height: 40px;
 }
 
 li {
+	display: inline;	
 	margin-right: 5%;
 	line-height: 40px;
 }
@@ -79,4 +81,56 @@ a {
 	width: 60%;
 }
 
+@media screen and (max-width: 576px){
+
+	li:not(.icon) {
+		display: none;
+	}
+
+	ul {
+	 	flex-direction: column;	
+		height: 40px;
+	}
+
+	.icon{
+		display: block;
+	}
+
+}
+
+@media screen and (min-width: 600px){
+
+.topnav {
+	position: fixed;
+	width: 100%;
+	top: 0px;
+	background-color: rgb(49,49,49,0.7);
+}
+
+.icon {	
+	display: none;
+	position: absolute;
+	margin-right: 3%;
+	right: 0px;
+}
+
+ul {
+	padding-left: 2%;
+	list-style: none;	
+	display: flex;
+	justify-content: flex-start;
+	line-height: 40px;
+}
+
+li {
+	display: inline;	
+	margin-right: 5%;
+	line-height: 40px;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+}
 

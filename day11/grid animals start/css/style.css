@@ -1,0 +1,4 @@
+/* import 3 files from imports folder */
+@import url("./imports/_borderBox.css");
+@import url("./imports/_reset.css");
+@import url("./imports/main.css");
