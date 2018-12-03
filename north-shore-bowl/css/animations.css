@@ -1,3 +1,10 @@
+/*
+    Author: Alex Bohn
+    Date: 2018/11
+    ITD Canada
+    Mobile-first design
+*/ 
+
 /******************** Animations *************************/
 
 @-webkit-keyframes slide_up {
@@ -5,7 +12,6 @@
         -webkit-transform: translateY(10px);
                 transform: translateY(10px);
     }
-
     100% {
         -webkit-transform: translateY(0px);
                 transform: translateY(0px);
@@ -17,7 +23,6 @@
         -webkit-transform: translateY(10px);
                 transform: translateY(10px);
     }
-
     100% {
         -webkit-transform: translateY(0px);
                 transform: translateY(0px);
@@ -29,7 +34,6 @@
         -webkit-transform: translateY(-80px);
                 transform: translateY(-80px);
     }
-
     100% {
         -webkit-transform: translateY(0px);
                 transform: translateY(0px);
@@ -41,7 +45,6 @@
         -webkit-transform: translateY(-80px);
                 transform: translateY(-80px);
     }
-
     100% {
         -webkit-transform: translateY(0px);
                 transform: translateY(0px);
@@ -53,7 +56,6 @@
         -webkit-transform: translateX(-50px);
                 transform: translateX(-50px);
     }
-
     100% {
         -webkit-transform: translateX(0px);
                 transform: translateX(0px);
@@ -65,7 +67,6 @@
         -webkit-transform: translateX(-50px);
                 transform: translateX(-50px);
     }
-
     100% {
         -webkit-transform: translateX(0px);
                 transform: translateX(0px);
@@ -77,7 +78,6 @@
     0% {
         opacity: 0;
     }
-
     100% {
         opacity: 1;
     }
@@ -88,7 +88,6 @@
     0% {
         opacity: 0;
     }
-
     100% {
         opacity: 1;
     }
@@ -129,7 +128,6 @@
         -webkit-filter: blur(0px);
                 filter: blur(0px);
     }
-
     100% {
         -webkit-filter: blur(4px);
                 filter: blur(4px);
@@ -141,7 +139,6 @@
         -webkit-filter: blur(0px);
                 filter: blur(0px);
     }
-
     100% {
         -webkit-filter: blur(4px);
                 filter: blur(4px);
