@@ -1,0 +1,82 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family: Open Sans;
+}
+
+body {	
+	background-image: url("../images/nature.jpg");
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;	
+}
+
+/************** NAVIGATION PART *************/
+
+.topnav {
+	position: fixed;
+	width: 100%;
+	top: 0px;
+}
+
+.icon {	
+	/*display: none;*/
+	position: absolute;
+	margin-right: 3%;
+	right: 0px;
+}
+
+ul {
+	padding-left: 2%;
+	list-style: none;
+	display: flex;
+	justify-content: flex-start;
+	background-color: rgb(49,49,49,0.7);
+}
+
+li {
+	margin-right: 5%;
+	line-height: 40px;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+/************** I LOVE CSS PART *************/
+
+.afterNav h1{	
+	text-align: center;
+	line-height: 100vh;
+	color: white;
+	text-shadow: 5px 5px 1px tomato;
+	font-size: 8em;
+	background-image: linear-gradient(rgba(0,255,0,0.3),rgba(49,49,49,0.1));
+}
+
+
+/*************** WEB DEVELOPMENT PART ***********/
+.nextPart{	
+	padding-top: 5%;
+	background-color: white;
+	height: 1000px;
+	display: flex;
+	justify-content: flex-start;	
+}
+
+.nextPart h2 {	
+	width: 40%;
+	text-align: right;
+	padding-right: 2%;
+
+}
+
+.nextPart p {
+	text-align: justify;
+	padding-right: 5%;
+	width: 60%;
+}
+
+
