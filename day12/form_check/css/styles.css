@@ -1,0 +1,68 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family: Lobo, sans-serif;
+	box-sizing: border-box;
+}
+
+div {
+	position: absolute;
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;	
+}
+
+h2 {
+	text-align: center;	
+	margin-bottom: 15px;
+}
+
+input[type=email], input[type=password] {
+	display: block;	
+	width: 100%;
+	line-height: 30px;
+	border: 1px solid black;		
+}
+
+input[placeholder] {	
+	text-indent: 10px;
+}
+
+input[type=submit] {
+	width: 120px;
+	height: 35px;
+	margin-top:20px;
+	background-color: cyan;
+	border: none;
+}
+
+label {
+	font-size: 14px;	
+}
+
+.check {	
+	animation: shake 0.3s cubic-bezier(.84,.01,.12,1);
+	animation-fill-mode: forwards;
+}
+
+
+@keyframes shake {
+	0% {
+		transform: translateX(-10px);		
+	}
+	20% {		
+		transform: translateX(10px);
+	}
+	40%{
+		transform: translateX(-10px);
+	}
+	60%{
+		transform: translateX(10px);
+	}
+	80%{
+		transform: translateX(-10px);
+	}
+	100%{
+		transform: translateX(0px);		
+	}
+}
