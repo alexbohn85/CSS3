@@ -1,0 +1,168 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family: Cabin;
+	box-sizing: border-box;	
+}
+
+body  {	
+	height: 100vh;
+	width: 100hv;
+}
+
+h2, p, button {
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+
+h2 {
+	padding-top: 10px;
+}
+
+button {
+	border: none;
+	background-color: green;
+	color: white;
+	height: 40px;
+	width: 80px;
+	cursor: pointer;
+}
+
+.modalParent {
+	display: none;
+	height: 100vh;	
+	position: fixed;
+	top: 0;
+	left: 0;	
+	z-index: 1000;
+	background-color: rgba(0,0,0,0.8);
+}
+
+.modalChild {
+	position: relative;
+	width: 80%;
+	margin: auto;
+	margin-top: 15%;
+	padding: 15px;
+	background-color: white;
+}
+
+.modalParent h3, .modalParent p {
+	margin-bottom: 10px;
+}
+
+.modalParent h3{
+	padding-top: 10px;
+}
+
+.modalParent p+p {
+	padding-bottom: 30px;
+}
+/* In */
+.closeButton {
+	font-size: 50px;
+	position: absolute;
+	right: 10px;	
+	top: -15px;
+}
+
+.theBall{
+	position: absolute;
+	height: 10px;
+	width: 10px;
+	border-radius: 100%;
+	background-color: red;
+	animation: move 1s linear infinite, vertical 1s infinite;
+	/*animation-iteration-count: 5;*/
+	left: 20px;
+}
+.theBall1{
+	position: absolute;
+	height: 10px;
+	width: 10px;
+	border-radius: 100%;
+	background-color: red;
+	animation: move 1s 0.05s linear infinite, vertical 1s infinite;
+	/*animation-iteration-count: 5;*/
+	left: 20px;
+}
+.theBall2{
+	position: absolute;
+	height: 10px;
+	width: 10px;
+	border-radius: 100%;
+	background-color: red;
+	animation: move 1s 0.1s linear infinite, vertical 1s infinite;
+	/*animation-iteration-count: 5;*/
+	left: 20px;
+}
+.theBall3{
+	position: absolute;
+	height: 10px;
+	width: 10px;
+	border-radius: 100%;
+	background-color: red;
+	animation: move 1s 0.15s linear infinite, vertical 1s infinite;
+	/*animation-iteration-count: 5;*/
+	left: 20px;
+}
+.theBall4{
+	position: absolute;
+	height: 10px;
+	width: 10px;
+	border-radius: 100%;
+	background-color: red;
+	animation: move 1s 0.2s linear infinite, vertical 1s infinite;
+	/*animation-iteration-count: 5;*/
+	left: 20px;
+}
+
+@keyframes move {
+	0% {
+		left: 20px;	
+	}
+	50% {
+		left: calc(100% - 20px);
+		
+	}	
+	100% {
+		left: 20px;		
+	}
+
+}
+
+@keyframes vertical2 {
+	0%{
+		top:80%;
+	}
+	10%{
+		top: 90%;
+	}
+	20%{
+		top: 80%;	
+	}
+	30%{
+		top: 70%;
+	}
+	40%{
+		top: 80%;
+	}
+	50%{
+		top: 90%;
+	}
+	60%{
+		top: 80%;
+	}
+	70%{
+		top: 70%;
+	}
+	80%{
+		top: 80%;
+	}
+	90%{
+		top: 90%;
+	}
+	100%{
+		top: 80%;
+	}
+}
