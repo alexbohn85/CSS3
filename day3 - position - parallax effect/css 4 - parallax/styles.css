@@ -58,7 +58,7 @@ body, html {
 
 /* The styling for the static div. */
 .static {
-  background: lightblue;
+  background-color: lightblue;
 }
 
 /* Sets the actual background images. This part is crucial. */
