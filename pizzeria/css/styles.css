@@ -17,17 +17,17 @@ font-family: Roboto Condensed;
     padding: 0px;
     box-sizing: content-box;
     font-family: 'Amatic SC', cursive;
+    scroll-behavior: smooth;
 }
 body{
     /*margin:10px;*/
-    overflow-y: scroll;
 }
 
 .wrapper {
   /* The height needs to be set to a fixed value for the effect to work.
    * 100vh is the full height of the viewport. */
   height: 100vh;
-  width: 100%;
+  width: 100vw;
   /* The scaling of the images would add a horizontal scrollbar, so disable x overflow. */
   overflow-x: hidden;
   /* Enable scrolling on the page. */
@@ -49,7 +49,7 @@ body{
   /* Move the pseudo-element back away from the camera,
    * then scale it back up to fill the viewport.
    * Because the pseudo-element is further away, it appears to move more slowly, like in real life. */
-  transform: translateZ(-70px) scale(2.2);
+  transform: translateZ(-80px) scale(2.2);
   /* Keep the image from overlapping sibling elements. */ 
   z-index: -1;
 }
@@ -67,16 +67,10 @@ body{
 }
 /***************************************************/
 
-.sticky{
-    position: sticky;
-    top: 0px;
-    z-index: 1000;
-}
 
 /************** SECTIONS *****************/
-
 /* this section is 100vh and text centered */
-.section {
+.section_centered {
   /* Needed for children to be absolutely positioned relative to the parent. */
   position: relative;
   /* The height of the container. Must be set, but it doesn't really matter what the value is. */
@@ -94,34 +88,31 @@ body{
   position: relative;
   /* The height of the container. Must be set, but it doesn't really matter what the value is. */
   height: 100vh;
-  width: 100%;  
+  width: 100%;
   /* For text formatting. */
-  display: block;
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-top: 60px;
-  padding-bottom: 60px;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  text-shadow: 0 0 5px #000;
+  overflow: hidden;
+  /*transform: translateZ(-1px);*/
+  color: black;
 }
 
 /*******************************************/
 
 
 
-/******* quotes *******/
+/******* QUOTES *******/
 .quotes {
     position: absolute;
+    /*display: flex;*/
+    /*flex-flow: column;*/
 }
 .quote_h1 {
     position: relative;
     color: white;
     margin-top: 100px;
     margin-left: 100px;
+    margin-right: 100px;
+    text-align: center; 
     font-size: 2em;
-    /*z-index: -1000;*/
 }
 .quote_h2 {
     position: relative;
@@ -129,6 +120,15 @@ body{
     margin: 100px;
     font-size: 1.5em;
     /*z-index: -1000;*/
+}
+.quotation_mark_big {
+    font-size: 40px;
+}
+.nyt {
+    width: 200px;
+    /*margin-left: calc(100% - 300px);*/
+    margin: auto;
+    padding-top: 40px;
 }
 /*************************/
 
@@ -141,38 +141,28 @@ body{
 }
 
 
-
+/*************** MENU CONTAINER ***************/
+.sticky {
+    position: sticky;
+    top: 0px;
+    z-index: 1000;
+}
 .menu_container {
     width: 100%;
-    padding-top: 20px;
-    transition: all 0.5s;
+    padding-top: 20px; /*menu padding*/
+    transition: all 1s;
 }
-
 .menu_container_small {
     padding-top: 0px;
 }
-
-.menu{
-    display: flex;
-    justify-content: center;
-    height: 100px;
-    width: 100%;
-    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.5));
-    box-shadow: 0 1px 25px 2px rgba(0,0,0,0.6);
-}
-
-.menu_small {
-    height: 50px;    
-    line-height: 50px;    
-}
-
 .div_logo{
     height: 100%;
 }
 .logo{
-    transform: translateY(-10px);
+    /*transform: translateY(-10px);*/
     filter: drop-shadow(0px 0px 2px black) opacity(0.8);
-    height: 130px;
+    height: 100px;
+    margin-right: 50px; 
     object-fit: contain;
         /*debug check boundaries*/
         /*background-color: yellow;*/
@@ -181,31 +171,57 @@ body{
     height: 100%;
     transform: translateY(0px);
 }
-
-
-
-/* Menu List */
-ul {
+.menu{
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.5));
+    box-shadow: 0 1px 15px 2px rgba(0,0,0,0.6);
+}
+.menu_small {
+    height: 50px;    
+    line-height: 50px;
+    background-image: '';
+    background-color: #111;
+}
+.menu_list {
     display: flex;
     justify-content: center;
         /*debug check boundaries*/
         /*background-color: green;*/
 }
-ul li {
+.menu_list .menu_item {
     list-style: none;
     width: 100px;
     text-align: center;
-    font-size: 1.2em;
+    font-size: 1.8em;
     line-height: 100px;
     color: #efefef;
-    transition: all 0.1s ease-out;
+    /*transition: all 0.1s ease-out;*/
 }
-
-ul li:hover{
-    text-decoration: overline;
+.menu_list .menu_item:hover {
+    /*text-decoration: overline;*/
     background-color: rgba(200,200,190,0.2);
+    /*background-color: transparent;*/
     cursor: pointer;
-    line-height: 98px;
+    line-height: 100px;
+    box-shadow: 0 10px 10px 0px rgba(0,0,0,1);
+    /*font-weight: bold;*/
+}
+.menu_list .menu_item_small {
+    height: 50px;    
+    line-height: 50px;
+}
+.menu_list .menu_item_small:hover {
+    /*text-decoration: overline;*/
+    /*background-color: rgba(200,200,190,0.2);*/
+    background-color: transparent;
+    cursor: pointer;
+    line-height: 52px;
     box-shadow: 0 4px 10px 0px rgba(0,0,0,1);
     /*font-weight: bold;*/
 }
+/**************** MENU END *************************/
+
+
