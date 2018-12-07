@@ -1,10 +1,18 @@
+// jQuery scroll animation
+$('a').click(function() {
+    $('html, body').animate({
+        scrollTop: ($($(this).attr('href')).offset().top - 50)
+    }, 1000);
+    return false;
+});
+
 
 function addMenuDesktopOnScroll(){	
 		window.onscroll = function(){ 
 			var scrollTop = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
 
 			let element_topPos = document.getElementById("aboutus").getBoundingClientRect().top;
-			console.log(element_topPos); // debug
+			// console.log(element_topPos); // debug
 
 			if(element_topPos < 100){
 				document.getElementsByClassName("menu_container")[0].classList.add("menu_container_small");

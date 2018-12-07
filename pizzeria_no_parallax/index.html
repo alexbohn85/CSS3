@@ -5,6 +5,7 @@
 		<title>Pizzeria</title>
 		<link rel="stylesheet" href="./css/styles.css">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 
 	</head>
 	<body>
@@ -21,17 +22,15 @@
 							<img class="logo" src="./assets/logo.png" alt="">
 						</div>
 						<ul class="menu_list">
-							<li class="menu_item">ABOUT US</li>
-							<li class="menu_item">MENU</li>
-							<li class="menu_item">LOCATIONS</li>
-							<li class="menu_item">CONTACT</li>
+							<li class="menu_item"><a href="#aboutus">ABOUT US</a></li>
+							<li class="menu_item"><a href="#pizzas">MENU</a></li>
+							<li class="menu_item"><a href="#local">LOCATIONS</a></li>
+							<li class="menu_item"><a href="#contact">CONTACT</a></li>
 						</ul>
 					</div>
 				</div>
 			</div><!-- Menu Ends -->
 
-
-		<!-- <div class="wrapper"> -->
 			
 			<!-- Section 1 - Main -->
 			<div class="quotes">						
@@ -44,8 +43,8 @@
 					</svg>
 				</div> <!-- NYTimes Logo --> 
 			</div>
-
-			<div class="section_normal background height_full"></div><!-- Section 1 End -->
+			<div class="section_normal background height_full"></div>
+			<!-- Section 1 - Main End -->
 
 			<!-- Section 2 - About Us -->
 			<div id="aboutus" class="section_normal heigth_full">
@@ -71,26 +70,420 @@
 				</div>
 			</div>
 
-			<!-- Section 3 - Background Wine -->
-			<div class="section_normal background2 height_half flex_centered">
+			<!-- Section 3 - Background 2 -->
+			<div class="section_normal background3 height_half flex_centered">
 				<h2>The cousins truly enjoy serving what they have become famous for. Thank you for embracing the concept!</h2>
 			</div>
 
-			<!-- Section 4 - Menu Pizzas -->
-			<div class="section_normal height_full">
-				<h1>Here goes pizza menu</h1>
-				<ul>
-					<li>Pizza 1 - M $15.98</li>
-					<li>Pizza 2 - M $19.80</li>
-					<li>Pizza 3 - M $19.80</li>
-				</ul>
+			<!-- Section 4 - Menu Pizza -->
+			<div id="pizzas" class="section_normal heigth_full">
+				<div class="wrapper_pizza">					
+					<div class="pizza_header">
+						<h1>Pizzas</h1>
+					</div>
+					<div class="pizza_content">						
+						<!-- column 1 start -->
+						<div class="items_column">
+							<div class="pizza_item">
+								<h2>Vegetarian</h2>
+							</div>
+							<div class="pizza_item">
+								<h3>Margarita (Cheese)</h3>
+								<p>Queijo, tomate, um pouco de tudo.</p>
+							</div>
+							<div class="pizza_item">
+								<h3>Spicy Mushroom</h3>
+								<p>Queijo, tomate, um pouco de tudo.</p>
+							</div>
+							<div class="pizza_item">
+								<h3>Pesto Artichoke</h3>
+								<p>Queijo, tomate, um pouco de tudo.</p>
+							</div>
+							<div class="pizza_item">
+								<h3>Hot 'n Sweet</h3>
+								<p>Queijo, tomate, um pouco de tudo.</p>
+							</div>
+							<div class="pizza_item">
+								<h3>5th Avenue</h3>
+								<p>Queijo, tomate, um pouco de tudo.</p>
+							</div>
+							<div class="pizza_item">
+								<h3>Hot Veg</h3>
+								<p>Queijo, tomate, um pouco de tudo.</p>
+							</div>
+							<div class="pizza_item">
+								<h3>T.O Salad</h3>
+								<p>Queijo, tomate, um pouco de tudo.</p>
+							</div>
+							<div class="pizza_item">
+								<h3>Kits Italiano</h3>
+								<p>Queijo, tomate, um pouco de tudo.</p>
+							</div>
+							<div class="pizza_item">
+								<h3>The Basic Veg</h3>
+								<p>Queijo, tomate, um pouco de tudo.</p>
+							</div>
+							<div class="pizza_item">
+								<h3>The Vegan</h3>
+								<p>Queijo, tomate, um pouco de tudo.</p>
+							</div>
+						</div>
+						<!-- column 1 end -->
+						<!-- column 2 start -->
+						<div class="items_column">
+							<div class="pizza_item">
+								<h2>Meat Lovers</h2>
+							</div>
+							<div class="pizza_item">
+								<h3>The Waikiki</h3>
+								<p>Ham & pineapple.</p>
+							</div>
+							<div class="pizza_item">
+								<h3>Chorizo Mushroom</h3>
+								<p>Lots of both for a big taste.</p>
+							</div>
+							<div class="pizza_item">
+								<h3>Domino's</h3>
+								<p>Pepperoni, mushrooms & green peppers.</p>
+							</div>
+							<div class="pizza_item">
+								<h3>Mead Deluxe</h3>
+								<p>Pepperoni, chorizo, mushrooms, onions, red & green peppers.</p>
+							</div>
+							<div class="pizza_item">
+								<h3>Beef Eater</h3>
+								<p>Feta cheese, beef, tomatoes & onions.</p>
+							</div>
+							<div class="pizza_item">
+								<h3>Italian Classic</h3>
+								<p>Italian sausage, red peppers, Sicilian olives, white onions & fresh garlic.</p>
+							</div>
+							<div class="pizza_item">
+								<h3>Meat Head</h3>
+								<p>Salami, ham & seasoned beef.</p>
+							</div>
+							<div class="pizza_item">
+								<h3>Uncle Tony</h3>
+								<p>Salami, white onions, anchovies & fresh garlic.</p>
+							</div>
+							<div class="pizza_item">
+								<h3>Uncle Al</h3>
+								<p>Hot capicollo, hot beel peppers, sweet onions & roasted garlic.</p>
+							</div>
+							<div class="pizza_item">
+								<h3>Uncle Joe</h3>
+								<p>Anchoveis, fresh tomatoes, sweet onions & fresh garlic.</p>
+							</div>
+						</div>
+						<!-- column 2 end -->
+						<!-- column 3 start -->
+						<div class="items_column">
+							<div class="pizza_item">
+								<h2>Specialty Pizzas</h2>
+							</div>
+							<div class="pizza_item">
+								<h3>Pizza Bianca</h3>
+								<p>Olive oil, brocoli, four cheese, red peppers & Kalamata olives.</p>
+							</div>
+							<div class="pizza_item">
+								<h3>N.Y Deli</h3>
+								<p>Capicollo, ham, pepperoni and salami.</p>
+							</div>
+							<div class="pizza_item">
+								<h3>BBQ Chicken</h3>
+								<p>Ranch, olive oil, sweet onion, bell pepper with Nat's BBQ sauce.</p>
+							</div>
+							<div class="pizza_item">
+								<h3>Maui Wowie</h3>
+								<p>BBQ Chicken, ham, peppers, onions and pineapple.</p>
+							</div>
+							<div class="pizza_item">
+								<h3>The Hilton</h3>
+								<p>Hot Capicollo, hot bell peppers & spicy mushrooms.</p>
+							</div>
+							<div class="pizza_item">
+								<h3>El Taco</h3>
+								<p>Seasoned beef with shredded lettuce, diced tomato, olives, mozzarella, cheddar and chives.</p>
+							</div>
+						</div>
+						<!-- column 3 end -->
+						<!-- column 4 start -->
+						<div class="items_column">
+							<div class="pizza_item">
+								<h2>Extra Toppings</h2>
+							</div>
+							<div class="pizza_item">
+								<h3>Regular Toppings</h3>
+								<p>Pepperoni * Ham * Mushrooms * Fresh Tomatoes * Red Onions * Sweet Onions * Green Peppers * Red Peppers * Hot Bell Peppers * Peperoncini * Sicilian Olives * Balck Olives * Spinach * Pineapple * Free Garlic * Free Roasted Garlic</p>
+							</div>
+							<div class="pizza_item">
+								<h3>Gourmet Toppings</h3>
+								<p>Chorizo Sausage * Fresh Italiana Sausage * Seasoned Beef * SEasoned Chicken * Hot Capicollo * Salami * Anchovies * Spicy Mushrooms * Broccoli * Artichokes * Sundried Tomatoes * Zucchini * Pesto * Feta Cheese * Bocconcini</p>
+							</div>
+							<div class="pizza_item">
+								<h3>Double Cheese</h3>
+								<p></p>
+							</div>
+							<div class="pizza_item">
+								<h3>Side of Ranch or Marinara</h3>
+								<p></p>
+							</div>
+							<div class="pizza_item">
+								<h3>Side of Parmesan Cheese</h3>
+								<p></p>
+							</div>
+						</div>
+						<!-- column 4 end -->					
+					</div>
+				</div>
+			</div>
+			<!-- Section 4 - Menu Pizza End -->
+
+			<!-- Section 5 - Background 3 -->
+			<div class="section_normal background4 height_half flex_centered">
+				<h2>Here goes something I have no idea...</h2>
 			</div>
 
-			<div class="section_normal height_quarter">
-				<footer>
-					<p>Copyright&copy; 2018 | Alex Bohn</p>
-				</footer>
+
+
+			<!-- Section 6 - Menu Salads Start -->
+			<div id="pizzas" class="section_normal heigth_full">
+				<div class="wrapper_pizza">					
+					<div class="pizza_header">
+						<h1>Salads</h1>
+						<h1>Soups</h1>
+						<h1>Pasta</h1>
+						<h1>Footlong Heros</h1>
+						<h1>Beverages</h1>
+					</div>
+					<div class="pizza_content">						
+						<!-- column 1 start -->
+						<div class="items_column">
+							<div class="pizza_item">
+								<h2>Salads</h2>
+							</div>
+							<div class="pizza_item">
+								<h3>Margarita (Cheese)</h3>
+								<p>Queijo, tomate, um pouco de tudo.</p>
+							</div>
+							<div class="pizza_item">
+								<h3>Spicy Mushroom</h3>
+								<p>Queijo, tomate, um pouco de tudo.</p>
+							</div>
+							<div class="pizza_item">
+								<h3>Pesto Artichoke</h3>
+								<p>Queijo, tomate, um pouco de tudo.</p>
+							</div>
+							<div class="pizza_item">
+								<h3>Hot 'n Sweet</h3>
+								<p>Queijo, tomate, um pouco de tudo.</p>
+							</div>
+							<div class="pizza_item">
+								<h3>5th Avenue</h3>
+								<p>Queijo, tomate, um pouco de tudo.</p>
+							</div>
+							<div class="pizza_item">
+								<h3>Hot Veg</h3>
+								<p>Queijo, tomate, um pouco de tudo.</p>
+							</div>
+							<div class="pizza_item">
+								<h3>T.O Salad</h3>
+								<p>Queijo, tomate, um pouco de tudo.</p>
+							</div>
+							<div class="pizza_item">
+								<h3>Kits Italiano</h3>
+								<p>Queijo, tomate, um pouco de tudo.</p>
+							</div>
+							<div class="pizza_item">
+								<h3>The Basic Veg</h3>
+								<p>Queijo, tomate, um pouco de tudo.</p>
+							</div>
+							<div class="pizza_item">
+								<h3>The Vegan</h3>
+								<p>Queijo, tomate, um pouco de tudo.</p>
+							</div>
+						</div>
+						<!-- column 1 end -->
+						<!-- column 2 start -->
+						<div class="items_column">
+							<div class="pizza_item">
+								<h2>Soups</h2>
+							</div>
+							<div class="pizza_item">
+								<h3>The Waikiki</h3>
+								<p>Ham & pineapple.</p>
+							</div>
+							<div class="pizza_item">
+								<h3>Chorizo Mushroom</h3>
+								<p>Lots of both for a big taste.</p>
+							</div>
+							<div class="pizza_item">
+								<h3>Domino's</h3>
+								<p>Pepperoni, mushrooms & green peppers.</p>
+							</div>
+							<div class="pizza_item">
+								<h3>Mead Deluxe</h3>
+								<p>Pepperoni, chorizo, mushrooms, onions, red & green peppers.</p>
+							</div>
+							<div class="pizza_item">
+								<h3>Beef Eater</h3>
+								<p>Feta cheese, beef, tomatoes & onions.</p>
+							</div>
+							<div class="pizza_item">
+								<h3>Italian Classic</h3>
+								<p>Italian sausage, red peppers, Sicilian olives, white onions & fresh garlic.</p>
+							</div>
+							<div class="pizza_item">
+								<h3>Meat Head</h3>
+								<p>Salami, ham & seasoned beef.</p>
+							</div>
+							<div class="pizza_item">
+								<h3>Uncle Tony</h3>
+								<p>Salami, white onions, anchovies & fresh garlic.</p>
+							</div>
+							<div class="pizza_item">
+								<h3>Uncle Al</h3>
+								<p>Hot capicollo, hot beel peppers, sweet onions & roasted garlic.</p>
+							</div>
+							<div class="pizza_item">
+								<h3>Uncle Joe</h3>
+								<p>Anchoveis, fresh tomatoes, sweet onions & fresh garlic.</p>
+							</div>
+						</div>
+						<!-- column 2 end -->
+						<!-- column 3 start -->
+						<div class="items_column">
+							<div class="pizza_item">
+								<h2>Pasta</h2>
+							</div>
+							<div class="pizza_item">
+								<h3>Pizza Bianca</h3>
+								<p>Olive oil, brocoli, four cheese, red peppers & Kalamata olives.</p>
+							</div>
+							<div class="pizza_item">
+								<h3>N.Y Deli</h3>
+								<p>Capicollo, ham, pepperoni and salami.</p>
+							</div>
+							<div class="pizza_item">
+								<h3>BBQ Chicken</h3>
+								<p>Ranch, olive oil, sweet onion, bell pepper with Nat's BBQ sauce.</p>
+							</div>
+							<div class="pizza_item">
+								<h3>Maui Wowie</h3>
+								<p>BBQ Chicken, ham, peppers, onions and pineapple.</p>
+							</div>
+							<div class="pizza_item">
+								<h3>The Hilton</h3>
+								<p>Hot Capicollo, hot bell peppers & spicy mushrooms.</p>
+							</div>
+							<div class="pizza_item">
+								<h3>El Taco</h3>
+								<p>Seasoned beef with shredded lettuce, diced tomato, olives, mozzarella, cheddar and chives.</p>
+							</div>
+						</div>
+						<!-- column 3 end -->
+						<!-- column 4 start -->
+						<div class="items_column">
+							<div class="pizza_item">
+								<h2>Footlongs</h2>
+							</div>
+							<div class="pizza_item">
+								<h3>Regular Toppings</h3>
+								<p>Pepperoni * Ham * Mushrooms * Fresh Tomatoes * Red Onions * Sweet Onions * Green Peppers * Red Peppers * Hot Bell Peppers * Peperoncini * Sicilian Olives * Balck Olives * Spinach * Pineapple * Free Garlic * Free Roasted Garlic</p>
+							</div>
+							<div class="pizza_item">
+								<h3>Gourmet Toppings</h3>
+								<p>Chorizo Sausage * Fresh Italiana Sausage * Seasoned Beef * SEasoned Chicken * Hot Capicollo * Salami * Anchovies * Spicy Mushrooms * Broccoli * Artichokes * Sundried Tomatoes * Zucchini * Pesto * Feta Cheese * Bocconcini</p>
+							</div>
+							<div class="pizza_item">
+								<h3>Double Cheese</h3>
+								<p></p>
+							</div>
+							<div class="pizza_item">
+								<h3>Side of Ranch or Marinara</h3>
+								<p></p>
+							</div>
+							<div class="pizza_item">
+								<h3>Side of Parmesan Cheese</h3>
+								<p></p>
+							</div>
+						</div>
+						<!-- column 4 end -->					
+					</div>
+				</div>
 			</div>
-	<script src="./js/main.js"></script>
+			<!-- Section 6 - Menu Salads End -->
+
+			<!-- Section 5 - Background 3 -->
+			<div class="section_normal background5 height_half flex_centered">
+				<h2>Here goes something I have no idea...</h2>
+			</div>
+
+
+			<!-- Section 6 - Contact -->
+			<div id="contact" class="section_normal height_full">
+				<div class="wrapper_contact">					
+					<div class="contact_header">
+						<h1>Contact</h1>
+					</div>
+					<div class="contact_content">						
+						<div class="contact">
+							<form action="">
+								<label for="name">Name</label><br>
+								<input type="text" size="40"><br>
+								<label for="email">Email</label><br>
+								<input type="email" size="40"><br>
+								<label for="tel">Telephone</label><br>
+								<input type="tel" size="40"><br>
+								<label for="">Message</label><br>
+								<textarea name="msg" id="msg" cols="40" rows="10"></textarea><br>
+								<input type="submit" value="Send">
+							</form>
+						</div>
+					</div><!-- Form end-->
+				</div>
+			</div>
+			<!-- Section 6 - Contact End -->
+
+
+			<!-- Section 7 - Background 4 -->
+			<div class="section_normal background4 height_half flex_centered">
+				<h2>Here goes something I have no idea...</h2>
+			</div>
+
+			<!-- Section 8 - Locations -->
+			<div id="local" class="section_normal height_full">
+				<h2>Our locations</h2>
+				<div class="location_container">
+					<div class="location_item">
+						<img src="./assets/loc1.jpg" alt="kitsilano image">
+						<h2>KITSILANO</h2>
+						<p>604-737-0707</p>
+					</div>
+					<div class="location_item">
+						<img src="./assets/loc2.jpg" alt="west end image">
+						<h2>WEST END</h2>
+						<p>604-642-0777</p>
+					</div>
+				</div>
+			</div>
+			<!-- Section 8 - Locations End -->
+
+			<!-- FOOTER START -->
+			<div class="section_normal height_footer">
+				<div class="wrapper_footer">
+					<div class="footer_header">					
+							<p>Copyright&copy; \\ 2018</p>
+					</div>
+					<div class="footer_content">
+						<div class="footer_item">							
+							<img src="./assets/eia_logo.gif" alt="">						
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			<!-- FOOTER END -->
+	<script src="./js/main.js"></script>	
 	</body>
 </html>
