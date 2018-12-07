@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata|Montserrat|Nunito|Raleway|Roboto+Mono');
+@import url("./animate.css");
+
+/*
+font-family: 'Montserrat', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto Mono', monospace;
+font-family: 'Nunito', sans-serif;
+font-family: 'Inconsolata', monospace;
+*/
+
+* {
+  -webkit-box-sizing:border-box;
+          box-sizing:border-box;
+  margin:0px;
+  padding: 0px;
+  font-family: 'Montserrat', sans-serif;
+  /*font-family: 'Raleway', sans-serif;*/
+  /*font-family: 'Roboto Mono', monospace;*/
+  /*font-family: 'Nunito', sans-serif;*/
+  /*font-family: 'Inconsolata', monospace;*/
+}
+
+header {
+  width: 100%;
+  background-color: black;
+  text-align: center;
+  color: pink;
+  line-height: 100px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+  width: 100%;    
+}
+
+ul{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: pink;  
+}
+ul li {
+  line-height: 40px;
+  width: 25%;
+  max-width: 300px;
+  text-align: center;  
+  text-transform: uppercase;
+  font-family: 'Nunito', sans-serif;
+}
+
+ul li:hover{
+  background-color: white;
+  cursor: pointer;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 80%;
+  max-width: 900px;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+}
+.slideshow_wrapper{  
+  width: 100%;
+  margin: auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #fafafa;  
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #f06;
+  font-weight: bold;
+  font-size: 18px;
+  -webkit-transition: 0.6s ease;
+  -o-transition: 0.6s ease;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color:#fafafa;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  background-color: rgba(0,0,0,0.8);
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  font-family: 'Inconsolata', monospace;
+}
+
+/* Number text (1/4 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  -webkit-transition: background-color 0.6s ease;
+  -o-transition: background-color 0.6s ease;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.anime_container {
+  position: relative;
+  width: 100%;
+  height: 25vh;
+  background-color: white;
+  margin-top: 5px;
+}
+
+.circle1 {
+  position: absolute;
+  bottom: 0px;
+  left: 10%;
+  height: 100px;
+  width: 100px;
+  background: -webkit-radial-gradient(#fff, #d5e);
+  background: -o-radial-gradient(#fff, #d5e);
+  background: radial-gradient(#fff, #d5e);
+  background-color: black;
+  border-radius: 50%;  
+}
+
+.circle2 {
+  position: absolute;
+  bottom: 0px;
+  left: 30%;
+  height: 100px;
+  width: 100px;
+  background: -webkit-radial-gradient(#fff, #5a5);
+  background: -o-radial-gradient(#fff, #5a5);
+  background: radial-gradient(#fff, #5a5);
+  background-color: black;
+  border-radius: 50%;  
+}
+
+.circle3 {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  height: 100px;
+  width: 100px;
+  background: -webkit-radial-gradient(#fff, #555);
+  background: -o-radial-gradient(#fff, #555);
+  background: radial-gradient(#fff, #555);
+  background-color: black;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 100px;
+}
+
+.circle1,
+.circle2,
+.circle3,
+.circle4 {
+  text-align: center;
+  line-height: 100px;
+}
+
+.circle4 {
+  position: absolute;
+  bottom: 0px;
+  left: 70%;
+  height: 100px;
+  width: 100px;
+  background: -webkit-radial-gradient(#fff, #005);
+  background: -o-radial-gradient(#fff, #005);
+  background: radial-gradient(#fff, #005);
+  background-color: black;
+  border-radius: 50%;
+  -webkit-animation: up_down 1s ease;
+          animation: up_down 1s ease; 
+}
+
+
+
+@-webkit-keyframes up_down {
+  0%{
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  50%{
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+  100%{
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+
+
+@keyframes up_down {
+  0%{
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  50%{
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+  100%{
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+
+/* Fading animation */
+ .fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 0.5s;
+  animation-name: fade;
+  animation-duration: 0.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+} 
+
+footer {
+  width: 100%;
+  text-align: center;
+  line-height: 100px;
+  background-color: black;
+  color: #fafafa;
+  font-size: 11px;
+}
