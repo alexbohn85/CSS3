@@ -6,6 +6,15 @@ $('a').click(function() {
     return false;
 });
 
+function showMenuMobile(){
+	let element = document.getElementsByClassName("menu_mob_container")[0]; 
+	if(!element.classList.contains("menu_mobile_show")){
+		element.classList.add("menu_mobile_show");
+	}else{
+		element.classList.remove("menu_mobile_show");
+	}
+}
+
 
 function addMenuDesktopOnScroll(){	
 		window.onscroll = function(){ 
