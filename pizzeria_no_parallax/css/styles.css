@@ -432,6 +432,8 @@ form label{
 }
 form textarea{
     font-family: Roboto;
+    border: none;
+    background-color: #efefef;
 }
 input[type=submit] {
     height: 45px;
@@ -585,15 +587,98 @@ input[type=submit] {
 /* media < 425 px */
 @media screen and (max-width: 425px) {
 
-        /*responsive item*/
+    /*responsive item*/
     .items_column {
         display: flex;
         flex-direction: column;
         /*change width for responsive media*/
         width: 100%;
     }
-    .menu_container {
+
+    .menu_list {
         display: none;
+    }
+    .menu{
+        display: flex;
+        justify-content: flex-end;
+        height: 100px;
+        width: 100%;
+        background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.5));
+        box-shadow: 0 1px 15px 2px rgba(0,0,0,0.6);
+    }
+
+    .menu_container {
+        width: 100%;
+    }
+    .div_logo{
+        height: 50%;
+    }
+    .logo{
+        /*transform: translateY(-10px);*/
+        filter: drop-shadow(0px 0px 2px black) opacity(0.8);
+        height: 100px;
+        margin: auto;
+        object-fit: contain;
+            /*debug check boundaries*/
+            /*background-color: yellow;*/
+    }
+
+    /******* QUOTES *******/
+    .quotes {
+        position: absolute;
+        /*display: flex;*/
+        /*flex-flow: column;*/
+    }
+    .quote_h1 {
+        position: relative;
+        color: white;
+        margin-top: 200px;
+        margin-left: 15px;
+        margin-right: 15px;
+        text-align: center; 
+        font-size: 1.5em;
+    }
+    .quote_h2 {
+        position: relative;
+        color: white;
+        margin: 100px;
+        font-size: 0.2em;
+        /*z-index: -1000;*/
+    }
+    .quotation_mark_big {
+        font-size: 40px;
+    }
+    .nyt {
+        width: 200px;
+        /*margin-left: calc(100% - 300px);*/
+        margin: auto;
+        padding-top: 40px;
+    }
+    /*************************/
+
+    /************ SOCIAL ***********/
+    .social{
+        position: fixed;    
+        display: flex;
+        flex-direction: column;
+        left: 20px;
+        top: 130px;
+        z-index: 1001;
+        color: #fafafa;
+    }
+    .social div {
+        text-align: center;
+    }
+    i {
+        font-size: 40px;
+        text-shadow: 0 0 2px black;
+        align-self: center;
+        transition: all 1s;
+    }
+    .social div:hover i {
+        cursor: pointer;
+        animation: turn 0.5s ease-in-out;
+
     }
 
 }/* END - media < 425 px */
