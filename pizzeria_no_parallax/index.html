@@ -11,14 +11,7 @@
 	</head>
 	<body>
 			
-			<div class="social">
-				<div><i class="fab fa-facebook-f"></i></div>
-				<div><i class="fab fa-instagram"></i></div>					
-			</div>
 
-			<div class="menu_mobile_btn" onclick="showMenuMobile()">
-				<i class="fas fa-bars"></i>
-			</div>
 						<!-- Menu -->
 			<div class="menu_mob_container">
 				<div class="menu_mobile">
@@ -31,6 +24,14 @@
 				</div>
 			</div>
 
+			<div class="menu_mobile_btn" onclick="showMenuMobile()">
+				<i class="fas fa-bars"></i>
+			</div>
+
+			<div class="social">
+				<div><i class="fab fa-facebook-f"></i></div>
+				<div><i class="fab fa-instagram"></i></div>					
+			</div>
 
 			<!-- Menu -->
 			<div class="sticky">
@@ -448,13 +449,23 @@
 						<div class="contact">
 							<form action="">
 								<label for="name">Name</label><br>
-								<input type="text" size="40"><br>
+								<div class="input_div">
+									<input type="text"><br>
+								</div>								
 								<label for="email">Email</label><br>
-								<input type="email" size="40"><br>
+
+								<div class="input_div">
+									<input type="email"><br>
+								</div>
 								<label for="tel">Telephone</label><br>
-								<input type="tel" size="40"><br>
+
+								<div class="input_div">
+									<input type="tel"><br>
+								</div>
 								<label for="">Message</label><br>
-								<textarea name="msg" id="msg" cols="42" rows="10"></textarea><br>
+								<div class="input_div">
+									<textarea name="msg" id="msg" cols="40" rows="10"></textarea><br>
+								</div>								
 								<input type="submit" value="Send">
 							</form>
 						</div>

@@ -381,7 +381,7 @@ i {
     border-right: 1px solid pink;
 }
 .pizza_content {
-    width: 100%;
+    width: 75%;
     margin-top: 80px;
     margin-left: 40px;
     margin-right: 40px;
@@ -426,9 +426,14 @@ i {
 form input {
     border: none;
     height: 25px;
+    width: 80%;
     margin-bottom: 10px;
     background-color: #efefef;
     font-family: Roboto;
+}
+.input_div{
+    width: 100%;
+    float: left;
 }
 form label{
     font-family: Roboto Condensed;
@@ -437,8 +442,10 @@ form label{
 }
 form textarea{
     font-family: Roboto;
+    width: 80%;
     border: none;
     background-color: #efefef;
+    resize: none;
 }
 input[type=submit] {
     height: 45px;
@@ -609,10 +616,13 @@ input[type=submit] {
         font-size: 10px;
         width: 20%;
     }
+    body{
+        overflow: all;
+    }
     .menu_mob_container{
         display: block;
-        position: absolute;
-        top: 00px;
+        position: fixed;
+        top: 0px;
         height: 250px;
         top: -250px;
         right: 0px;
@@ -722,5 +732,176 @@ input[type=submit] {
         animation: turn 0.5s ease-in-out;
 
     }
+
+    /*SECTION ABOUT*/
+    .wrapper_about {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        background-color: #fafafa;
+    }
+    .wrapper_about .about_header {
+        width: 25%;
+        margin-top: 80px;
+        margin-bottom: 80px;
+        border-right: 1px solid pink;
+    }
+    .wrapper_about .about_content {
+        width: 75%;
+        margin-top: 80px;
+        margin-bottom: 80px;
+        display: flex;
+        flex-direction: column;
+        font-size: 1em;
+        font-weight: bold;
+    }
+    .story {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .story p {
+        width: 50%;
+        align-self: center;
+        text-align: center;
+        margin-right: 15px;
+        line-height: 25px;
+        font-family: Roboto Condensed;
+    }
+    .story #img1 {
+        object-fit: contain;
+        width: 100%;
+    }
+    .story #img2 {
+        object-fit: cover;
+        order: 2;
+        width: 100%;
+    }
+    .story:nth-of-type(2) p{
+        order: 1;
+        text-align: center;
+        margin-left: 15px;
+    }
+    .story #img3 {
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .story img {
+        filter: grayscale(100%) brightness(125%);
+        transition: 0.3s;
+        transform: scale(0.95);
+    }
+    .story img:hover, .story:hover img {
+        filter: grayscale(0%);
+        transform: scale(1);
+    }
+
+
+    /*SECTION MENU PIZZA SALADS*/
+    .pizza_header {
+        width: 45%;
+        text-align: center;
+        margin-top: 80px;
+        margin-bottom: 80px;
+        border-right: 1px solid pink;
+    }
+    .pizza_content {
+        width: 55%;
+        margin-top: 80px;
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-bottom: 80px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        font-size: 1em;
+        font-weight: bold;
+    }
+
+    /*SECTION FORM */
+    form input {
+        border: none;
+        height: 25px;
+        margin-bottom: 10px;
+        background-color: #efefef;
+        font-family: Roboto;
+    }
+    form label{
+        font-family: Roboto Condensed;
+        font-size: 0.85em;
+    }
+    form textarea{
+        font-family: Roboto;
+        border: none;
+        background-color: #efefef;
+    }
+    input[type=submit] {
+        height: 45px;
+        width: 80px;
+        font-size: 16px;
+        margin-top: 10px;
+    }
+    .wrapper_contact {
+        display: block;
+        width: 100%;
+        height: 100%;
+        text-align: left;
+        background-color: #fafafa;
+    }
+    .contact_content {
+        margin: 0px;
+        display: block;
+        font-size: 1em;
+        font-weight: bold;
+    }
+    .contact{
+        width: 90%;
+        margin: 0px;
+        padding-left: 6%;
+    }
+
+    /*SECTION LOCATIONS */
+    .location_container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        padding-top:30px;
+    }
+    .location_container .location_item:first-child {
+        border-right: none;
+    }
+    .location_item{
+        align-self: center;
+        width: 80%;
+        text-align: center;
+        filter: grayscale(0);
+        height: 40%;
+        transition: all 0.3s;
+    }
+    .location_item img {
+        object-fit: cover;
+        width: 80%;
+    }
+    .location_item h2 {
+        margin: 0px;
+        padding: 0px;
+        line-height: 100%;
+        font-size: 10px;
+    }
+    .location_item p {
+        font-family: Roboto condensed;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    #local h2{
+        text-align: center;
+        padding-top: 0px;
+        font-size: 30px;
+    }
+
 
 }/* END - media < 425 px */
