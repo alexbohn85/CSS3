@@ -557,6 +557,75 @@ input[type=submit] {
 /* media < 768 px */
 @media screen and (max-width: 768px) {
 
+/*SECTION ABOUT*/
+.wrapper_about {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: #fafafa;
+}
+.wrapper_about .about_header {
+    width: 25%;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    border-right: 1px solid pink;
+}
+.wrapper_about .about_content {
+    width: 75%;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    font-size: 1em;
+    font-weight: bold;
+}
+.story {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.story p {
+    width: 50%;
+    align-self: center;
+    text-align: left;
+    margin-right: 15px;
+    line-height: 25px;
+    font-family: Roboto Condensed;
+}
+.story #img1 {
+    object-fit: contain;
+    width: 80%;
+    margin: auto;
+}
+.story #img2 {
+    object-fit: cover;
+    order: 2;
+    width: 80%;
+    margin: auto;
+}
+.story:nth-of-type(2) p{
+    order: 1;
+    text-align: left;
+}
+.story #img3 {
+    object-fit: cover;
+    width: 70%;
+    margin: auto;
+}
+
+.story img {
+    filter: grayscale(100%) brightness(125%);
+    transition: 0.3s;
+    transform: scale(0.95);
+}
+.story img:hover, .story:hover img {
+    filter: grayscale(0%);
+    transform: scale(1);
+}
+
+
 .menu_container {
     padding-top: 0px;
 }
